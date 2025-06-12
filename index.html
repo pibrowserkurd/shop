@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pi Shop</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and layout */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      padding: 20px;
+      background-color: #660066;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .balance {
+      font-size: 1.2rem;
+    }
+
+    /* Main content */
+    main {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Product cards */
+    .product {
+      background-color: #f4f4f9;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .product button {
+      background-color: #660066;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #7a3eab;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 20px;
+      background-color: #660066;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      color: #fff;
+    }
+
+    /* Flexbox layout for products */
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .product-left {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .product-center {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .product-right {
+      flex: 1;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pi Shop</h1>
+      <div class="pi-logo">
+      <img src="https://play-lh.googleusercontent.com/8J2vXz5g2F2l0x7d0Z3WvL1Wn8Yd5X0cW0QJ6g4V1w7d5Q5j5xk5Q5i5X5i5X5i5" alt="Pi Browser Logo">
+    </div>
+    </div>
+    <div class="balance">
+      <span>Balance: <span id="pi-balance">10</span> π | <span id="iqd-balance">20,000</span> IQD</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <!-- Existing product rows (as previously defined) -->
+
+      <!-- Row 3 -->
+      <div class="product-row">
+        <div class="product product-left">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-center">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-right">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="product-row">
+        <div class="product product-left">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-center">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-right">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+       <!-- Row 5 -->
+      <div class="product-row">
+        <div class="product product-left">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-center">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-right">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+       <!-- Row 6 -->
+      <div class="product-row">
+        <div class="product product-left">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-center">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-right">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+       <!-- Row 7 -->
+      <div class="product-row">
+        <div class="product product-left">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-center">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+        <div class="product product-right">
+          <img src="https://www.ps4home.com/wp-content/uploads/2013/11/PS4-Console-wDS4.png" alt="PS4 Console">
+          <h2>PS4 Console</h2>
+          <p>Price: <span class="price-pi">1.25</span> π / <span class="price-iqd">2,500</span> IQD</p>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+
+      <!-- Additional rows can be added here following the same structure -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pi Shop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to handle balance and purchase logic
+    const piBalanceElement = document.getElementById('pi-balance');
+    const iqdBalanceElement = document.getElementById('iqd-balance');
+    let piBalance = parseFloat(piBalanceElement.textContent);
+    let iqdBalance = parseInt(iqdBalanceElement.textContent.replace(',', ''));
+
+    const buyButtons = document.querySelectorAll('.buy-btn');
+    buyButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const product = button.closest('.product');
+        const pricePi = parseFloat(product.querySelector('.price-pi').textContent);
+        const priceIqd = parseInt(product.querySelector('.price-iqd').textContent.replace(',', ''));
+
+        if (piBalance >= pricePi && iqdBalance >= priceIqd) {
+          piBalance -= pricePi;
+          iqdBalance -= priceIqd;
+          piBalanceElement.textContent = piBalance.toFixed(2);
+          iqdBalanceElement.textContent = iqdBalance.toLocaleString();
+          alert('Purchase successful!');
+        } else {
+          alert('Insufficient balance.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
